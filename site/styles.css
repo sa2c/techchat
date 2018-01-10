@@ -1,0 +1,52 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: Futura, Helvetica, HelveticaNeue, Arial, sans-serif;
+  margin-bottom: 100px;
+  background-color: #ffffff;
+  background-image: url(wave.png);
+  background-repeat: no-repeat;
+  background-position: 0px bottom;
+  background-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cosmos, "Cosmos BQ", Georgia, serif;
+  color: #005B99;
+  font-weight: normal;
+}
+
+a:link {
+  color: #005B99;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #207BB9;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+}
+
+.date {
+  width: 10%;
+  text-align: center;
+}
+
+.name {
+  width: 10%;
+  text-align: left;
+}
+
+.title {
+  text-align: left;
+}
+
+.scriptlink {
+  cursor: pointer;
+  color: #005B99;
+}

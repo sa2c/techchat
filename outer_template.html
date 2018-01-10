@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <meta charset="utf-8">
+    <TITLE>SA2C Seminar Series</TITLE>
+    <link rel="stylesheet" type="text/css" href="fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript">
+    function open_close(id) {{
+      var display = document.getElementById(id).style.display;
+      document.getElementById(id).style.display = (display == "inline" ? "none" : "inline");
+    }}
+    function abstract(id) {{
+      var display = document.getElementById(id).style.display;
+      document.getElementById(id).style.display = (display == "inline" ? "none" : "inline");
+      document.getElementById(id + 'show').style.display = (display == "inline" ? "inline" : "none");
+    }}
+    </script>
+  </HEAD>
+  <BODY>
+    <H1>SA2C Seminar Series</H1>
+  <p>Fridays, 3pm, Faraday 504 (Small Talk Room)</p>
+  <H2><span class="scriptlink" onClick="open_close('upcoming');">Upcoming</span></H2>
+  <div id="upcoming" style="display:inline">
+    <TABLE>
+    <col class="date" />
+    <col class="name" />
+    <col class="title" />
+    {future}
+    </TABLE>
+  </div>
+
+  <H2><span class="scriptlink" onClick="open_close('past');">Past events</span></H2>
+  <div id="past" style="display:none">
+    {past}
+  </div>
+
+  </BODY>
+</HTML>
