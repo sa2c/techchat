@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <meta charset="utf-8">
+    <TITLE>SA2C Seminar Series</TITLE>
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script type="text/javascript">
+    function open_close(id) {
+      var display = document.getElementById(id).style.display;
+      document.getElementById(id).style.display = (display == "inline" ? "none" : "inline");
+    }
+    function abstract(id) {
+      var display = document.getElementById(id).style.display;
+      document.getElementById(id).style.display = (display == "inline" ? "none" : "inline");
+      document.getElementById(id + 'show').style.display = (display == "inline" ? "inline" : "none");
+    }
+    </script>
+  </HEAD>
+  <BODY>
+    <div class="header">
+      <div class="innerheader">
+	<img src="images/logo.png" alt="SA2C logo" height="100px" class="title" />
+	<span class="title">
+	  Swansea Academy of Advanced Computing<br />
+	  Academi Uwch Gyfrifiadureg Abertawe
+	</span>
+      </div>
+    </div>
+    <H1>SA2C Seminar Series</H1>
+  <p>Fridays, 3pm, Faraday 504 (Small Talk Room)</p>
+  <H2><span class="scriptlink" onClick="open_close('upcoming');">Upcoming</span></H2>
+  <div id="upcoming" style="display:inline">
+    <TABLE>
+    <col class="date" />
+    <col class="name" />
+    <col class="title" />
+          <TR><td>2018-01-12<BR>15:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td>Using METAQ for task bundling <div id="82106755f1540349c587ab1713ce8b4ashow" style="display:inline"><span class="scriptlink" onClick="abstract('82106755f1540349c587ab1713ce8b4a');">Show abstract</span></div><div id="82106755f1540349c587ab1713ce8b4a" style="display:none"><br />[tbc]
+	    <span class="scriptlink" onClick="abstract('82106755f1540349c587ab1713ce8b4a');">Hide abstract</span></div> </TD></TR>
+
+      <TR><td>2018-01-19<BR>15:00:00</TD>
+	<td>Jarno Rantaharju</TD>
+	<td>Vectorisation for modern architectures with AVX512 <div id="afd9f92eb6a9fcb979c374a375eefe61show" style="display:inline"><span class="scriptlink" onClick="abstract('afd9f92eb6a9fcb979c374a375eefe61');">Show abstract</span></div><div id="afd9f92eb6a9fcb979c374a375eefe61" style="display:none"><br />[tbc]
+	    <span class="scriptlink" onClick="abstract('afd9f92eb6a9fcb979c374a375eefe61');">Hide abstract</span></div> </TD></TR>
+
+      <TR><td>2018-01-26<BR>15:00:00</TD>
+	<td>[No Seminar]</TD>
+	<td>[No Seminar] <div id="09116c91a0790d17ae442b0e7bd1080fshow" style="display:inline"><span class="scriptlink" onClick="abstract('09116c91a0790d17ae442b0e7bd1080f');">Show abstract</span></div><div id="09116c91a0790d17ae442b0e7bd1080f" style="display:none"><br />The SA2C team are facilitating a Software Carpentry workshop this week, so there will be no seminar.
+	    <span class="scriptlink" onClick="abstract('09116c91a0790d17ae442b0e7bd1080f');">Hide abstract</span></div> </TD></TR>
+
+      <TR><td>2018-02-02<BR>15:00:00</TD>
+	<td>Tadas Nikonovas</TD>
+	<td>strace for developers <div id="b811355e5ccd788c2c4dd297a45d96e2show" style="display:inline"><span class="scriptlink" onClick="abstract('b811355e5ccd788c2c4dd297a45d96e2');">Show abstract</span></div><div id="b811355e5ccd788c2c4dd297a45d96e2" style="display:none"><br />[tbc]
+	    <span class="scriptlink" onClick="abstract('b811355e5ccd788c2c4dd297a45d96e2');">Hide abstract</span></div> </TD></TR>
+
+    </TABLE>
+  </div>
+
+  <H2><span class="scriptlink" onClick="open_close('past');">Past events</span></H2>
+  <div id="past" style="display:none">
+    
+  </div>
+
+  <!--footer-->
+  <div class="footer">
+    <ul class="footeritems">
+      <li class="footeritem"><a href="https://supercomputing.wales/"><img src="images/scw.svg" height="70px" /></a></li>
+      <li class="footeritem"><a href="https://www.swansea.ac.uk/"><img src="images/swansea.svg" height="70px" /></a></li>
+      <li class="footeritem"><img src="images/wefo.svg" height="60px" /></li>
+    </ul>
+  </div>
+  </BODY>
+</HTML>
