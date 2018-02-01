@@ -28,7 +28,9 @@ def get_details(files):
 
     default = {
         "time": 900,
-        "abstract": "[tbc]",
+        "abstract": "",
+        "disableabstractstart": "",
+        "disableabstractend": "",
         "title": "[tbc]",
         "speaker": "[tbc]"
     }
@@ -59,6 +61,9 @@ def get_details(files):
                 past.append(detail)
             else:
                 future.append(detail)
+        if not detail['abstract']:
+            detail['disableabstractstart'] = "<!--"
+            detail['disableabstractend'] = "-->"
             
     return past, future
 
