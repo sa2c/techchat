@@ -1,0 +1,13 @@
+title: strace for developers
+speaker: Tadas Nikonovas
+date: 2018-03-02
+abstract: |
+  The talk will showcase a powerful but little known Linux utility,
+  strace. The command belongs to a special group of tools which operate
+  on other commands or executables. It reports system calls made and
+  signals received by the application under scrutiny and is useful
+  for debugging, trouble shooting, or analysing activity of a program
+  without available source code. The presentation will focus on a
+  particular use case for exploiting strace for tracing I/O activity.
+  Basic usage examples of strace will be shown, demonstrating how to
+  make sense of the output given by the command.
