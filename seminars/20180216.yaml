@@ -1,6 +1,7 @@
 title: Meltdown in a nutshell
 speaker: Mark Dawson
 date: 2018-02-16
+videoid: "AZS3yR_96kI"
 abstract: |
   The talk will introduce and motivate several design features of current chips and operating system features. 
   These include an accessible introduction to features of many modern processing units, such as: CPU caches, 

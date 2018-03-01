@@ -31,6 +31,9 @@ def get_details(files):
         "abstract": "",
         "disableabstractstart": "",
         "disableabstractend": "",
+        "disablevideostart": "",
+        "disablevideoend": "",
+        "videoid": "",
         "title": "[tbc]",
         "speaker": "[tbc]"
     }
@@ -64,6 +67,9 @@ def get_details(files):
         if not detail['abstract']:
             detail['disableabstractstart'] = "<!--"
             detail['disableabstractend'] = "-->"
+        if not detail['videoid']:
+            detail['disablevideostart'] = "<!--"
+            detail['disablevideoend'] = "-->"
             
     return past, future
 

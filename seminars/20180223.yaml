@@ -1,6 +1,7 @@
 title: Introduction to template metaprogramming
 speaker: Jonas Glesaaen
 date: 2018-02-23
+videoid: YmLdZfTq0Q8
 abstract: |
   In this talk I will give an introduction to template metaprogramming in C++,
   focusing on what it is good for and which kind of issues one normally would
