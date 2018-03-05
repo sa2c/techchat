@@ -1,0 +1,13 @@
+title: Continuous Integration with Jenkins
+speaker: Colin Sauze
+date: 2018-03-09
+abstract: |
+  I will be talking about Jenkins, a continuous integration
+  system with a user friendly web interface. Jenkins automates compiling,
+  testing and deploying software and can be a very useful tool for
+  improving code quality and preventing bugs from reaching production
+  systems. I will show how I used Jenkins to build and test a web portal
+  for experiment management at the National Plant Phenomics Centre in
+  Aberystwyth. I would also be asking the question of how appropriate
+  continuous integration is in research software where developers often
+  work alone and the number of users is small.
