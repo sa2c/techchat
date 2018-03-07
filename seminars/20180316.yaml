@@ -1,6 +1,6 @@
 title: strace for developers
 speaker: Tadas Nikonovas
-date: 2018-03-02
+date: 2018-03-16
 abstract: |
   The talk will showcase a powerful but little known Linux utility,
   strace. The command belongs to a special group of tools which operate
