@@ -1,0 +1,10 @@
+title: Structuring Large Python Projects
+speaker: Ed Bennett
+date: 2018-03-23
+abstract: |
+  What do you do when your Python projects become too large to manage 
+  by simply sticking a bunch of Python files in a folder? How can you 
+  nest packages to best make your code maintainable and reusable?
+  In this talk I will discuss some best practices and strategies to
+  structuring large projects, drawing from case studies in the Python
+  standard library.
