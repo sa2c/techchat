@@ -1,0 +1,13 @@
+title: Emacs for vim users
+speaker: Mark Dawson
+date: 2018-04-27
+abstract: |
+  At this TechChat, we'll take a look at spacemacs, a popular new 
+  configuration for the emacs editor. This provides, amongst other things, 
+  a near-identical replication of vim within emacs. Seasoned vim users can 
+  access unparalleled configurability and extendability of emacs, without 
+  the need to learn new keybindings for editing. The configuration is 
+  designed to make emacs easily discoverable and make common configurations 
+  simple. Vanilla emacs users can have the convenience of simple modular 
+  configuration, whilst taking advantage of a powerful modular configuration 
+  and switching between vim and emacs style with a single keystroke.

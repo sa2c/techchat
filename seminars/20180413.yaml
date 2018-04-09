@@ -1,0 +1,10 @@
+title: Introduction to Neural Networks
+speaker: Jarno Rantaharju
+date: 2018-04-13
+abstract: |
+  Continuing on the theme of Machine Learning, I will give a brief 
+  technical introduction to Artificial Neural Networks and Deep Learning. 
+  Starting from the simple artificial neuron, I will describe the general 
+  construction of classifiers, generative models and recurrent neural 
+  networks, as well as training the networks using Gradient Descent 
+  Algorithms.
