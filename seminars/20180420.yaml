@@ -1,3 +1,11 @@
-title: Software Development for Microsoft HoloLens
+title: Developing Augmented Reality Applications for the HoloLens
 speaker: Sean Walton
 date: 2018-04-20
+abstract: |
+  The Microsoft HoloLens is an self contained augmented reality headset and computer. 
+  The College of Science and Swansea Academy of Learning and Teaching have invested in 
+  a number of devices to explore potential applications to teaching and learning. In 
+  this talk I will be sharing my experiences developing prototypes for the HoloLens. 
+  I'll focus on the capabilities of the device and the challenges of creating augmented 
+  reality experiences in environments you've never seen.
+videoid: tes16ZS787c
