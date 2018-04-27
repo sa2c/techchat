@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <meta charset="utf-8">
+    <TITLE>SA2C Tech Chat</TITLE>
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script type="text/javascript">
+    function open_close(id) {
+      var display = document.getElementById(id).style.display;
+      document.getElementById(id).style.display = (display == "inline" ? "none" : "inline");
+    }
+    function abstract(id) {
+      var display = document.getElementById(id).style.display;
+      document.getElementById(id).style.display = (display == "inline" ? "none" : "inline");
+      document.getElementById(id + 'show').style.display = (display == "inline" ? "inline" : "none");
+    }
+    </script>
+  </HEAD>
+  <BODY>
+    <div class="header">
+      <div class="innerheader">
+	<img src="images/logo.png" alt="SA2C logo" height="100px" class="title" />
+	<span class="title">
+	  Swansea Academy of Advanced Computing<br />
+	  Academi Uwch Gyfrifiadureg Abertawe
+	</span>
+      </div>
+    </div>
+    <H1>SA2C Tech Chat</H1>
+    <H2>Proposed chat topics</H2>
+    <p>The following is a list of chats that have been proposed. If you would like to present one of them, or would like to propose another, then please contact <a href="mailto:e.j.bennett@swansea.ac.uk?subject=I%20want%20to%20give%20an%20SA2C%20Tech%20Chat%21">Ed Bennett</a>.</p>
+
+    <ul>
+      <li> Automated checkpointing of HPC jobs
+      <li> The free Barcelona Supercomputing Center performance analysis tooling
+      <li> Interfacing Python with compiled languages
+      <li> What is Lustre and how does it work?
+      <li> Best practices for pointers in C++
+      <li> The module command: how does it work?
+    </ul>
+
+    <p><a href="index.html">Back to the schedule</a></p>
+
+  <!--footer-->
+  <div class="footer">
+    <ul class="footeritems">
+      <li class="footeritem"><a href="https://supercomputing.wales/"><img src="images/scw.svg" height="70px" /></a></li>
+      <li class="footeritem"><a href="https://www.swansea.ac.uk/"><img src="images/swansea.svg" height="70px" /></a></li>
+      <li class="footeritem"><img src="images/wefo.svg" height="60px" /></li>
+    </ul>
+  </div>
+  </BODY>
+</HTML>
