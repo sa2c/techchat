@@ -1,0 +1,7 @@
+title: "Using C from Python: the ctypes library"
+speaker: Michele Mesiti
+date: 2018-05-25
+abstract: |
+  Sometimes Python is too slow, and numpy has just not got the feature you need. 
+  In this talk I'll show how to use Python ctypes to import your functions written 
+  in C. Alternatives will also be reviewed.

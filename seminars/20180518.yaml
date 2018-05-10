@@ -1,0 +1,9 @@
+title: "Benchmarking C compilers"
+speaker: Jarno Rantaharju 
+date: 2018-05-18
+abstract: |
+  The compiler used to turn human readable code into a machine readable object file 
+  naturally has an effect on performance. We usually remember to tune compiler flags 
+  to fit the application, but the different compiler versions can behave differently. 
+  I study the performance of a well tuned HPC application when compiled with different 
+  versions of gcc, clang and the Intel compiler.
