@@ -1,0 +1,7 @@
+title: "Structural Design Patterns"
+speaker: Michele Mesiti
+date: 2018-06-08
+abstract: |
+  Using well known patterns in designing software can help greatly in developing code that is easier to maintain, 
+  to extend and to understand for other people. In this Tech Chat I will discuss some of the most common ones in 
+  the category of "Structural Patterns" and compare them.
