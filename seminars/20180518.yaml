@@ -7,3 +7,4 @@ abstract: |
   to fit the application, but the different compiler versions can behave differently. 
   I study the performance of a well tuned HPC application when compiled with different 
   versions of gcc, clang and the Intel compiler.
+videoid: yziH9wPLwhw
