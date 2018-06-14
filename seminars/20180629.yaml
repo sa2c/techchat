@@ -1,0 +1,8 @@
+title: "Git: Demystified"
+speaker: Mark Dawson
+date: 2018-06-29
+abstract: |
+  Ever wondered how git really works? Where and how does it store it's data and what exactly is being stored? Can we peek into the database at 
+  files, commits, branches and directory trees? What information is git storing and how? How is this different from other version control systems?
+  We take a peek under the hood to see what and how information is being stored and manipulated in our day-to-day git usage, and how this can leads 
+  to being more productive with git.

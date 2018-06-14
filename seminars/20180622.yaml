@@ -1,0 +1,9 @@
+title: "Open Source Licenses"
+speaker: Jarno Rantaharju
+date: 2018-06-22
+abstract: |
+  Which open source license should you choose when you publish your scientific code? 
+  There are several public software licenses giving slightly different permissions and 
+  imposing slightly different restrictions to using your code.  I will introduce the 
+  most common options, from a public domain declaration to no license at all, and outline 
+  their features and problems for scientific code.

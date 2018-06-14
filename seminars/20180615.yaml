@@ -1,0 +1,9 @@
+title: "Staying sane in Python with virtual environments"
+speaker: Ed Bennett
+date: 2018-06-15
+abstract: |
+  One of Python's most attractive features and the source of much of its power  is its extensive library of 
+  third-party modules and libraries. However, when too many libraries are installed, it becomes difficult to
+  manage keeping compatible versions, and to move applications between machines. In this Tech Chat, Ed will 
+  introduce some of the tooling available to make these experiences easier, including conda, virtualenv, and 
+  pipenv.
