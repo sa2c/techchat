@@ -1,5 +1,9 @@
 title: "Introduction to GPUs: what it is and what you can do with it"
 speaker: Jarno Rantaharju
 date: 2018-07-13
+abstract: |
+  Graphical Processing Units (GPU) are frequently used to solve computationally intensive problems. 
+  They are well suited for computationally intensive problems, such as machine learning, but the power 
+  comes with limitations. I will give an overview of the history and the technical details of modern GPUs 
+  and contrast them with other computing platforms.
 
-  

@@ -1,5 +1,7 @@
 title: "Examples of GPU programming"
 speaker: Michele Mesiti
 date: 2018-07-20
-
+abstract: |
+  In this TechChat, Michele will show some examples of GPU programming, making use of CUDA, OpenCL, and OpenACC.
+  He will also show an example of a very simple OpenGL application.
   
