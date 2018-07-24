@@ -1,0 +1,9 @@
+title: "What even is the module command?"
+speaker: Ed Bennett
+date: 2018-07-27
+abstract: |
+  The module command is frequently provided on HPC systems to give access
+  to a wide array of often mutually incompatible software, but sometimes it
+  has limitations which seem restrictive or quirky. In this Tech Chat we will
+  explore the structure and mechanisms of the underlying implementation of 
+  the module command to find the origin of these limitations.
