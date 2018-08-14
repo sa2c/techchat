@@ -1,0 +1,9 @@
+title: 'A short introduction to PETSc'
+speaker: Chenna Kadapa
+date: 2018-08-17
+abstract: |
+  In this talk, we will have a short introduction to PETSc. We will look 
+  at some important data structures and utilities in PETSc that are very 
+  useful for computational scientists interested in developing codes for 
+  HPC architectures. We will look at some important aspects of PETSc that 
+  makes it so powerful and flexible.
