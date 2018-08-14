@@ -95,7 +95,7 @@ def generate_inner(details, inner_template):
     '''Takes a list of `details`, and formats each according 
     to `inner_template`'''
 
-    details.sort(key=itemgetter('date', 'time'))
+    details.sort(key=itemgetter('date', 'time'), reverse=True)
     for detail in details:
         yield inner_template.format(**detail)
 
