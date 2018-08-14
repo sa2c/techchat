@@ -95,7 +95,7 @@ def generate_inner(details, inner_template):
     '''Takes a list of `details`, and formats each according 
     to `inner_template`'''
 
-    details.sort(key=itemgetter('date', 'time'), reverse=True)
+    details.sort(key=itemgetter('date', 'time'))
     for detail in details:
         yield inner_template.format(**detail)
 
@@ -105,10 +105,12 @@ def year_html(years, inner_template):
     in reverse chronological order.'''
     
     for year in sorted(years.keys(), reverse=True):
-        yield year, '\n'.join(inner_html
-                              for inner_html
-                              in generate_inner(years[year], inner_template))
-        
+        yield year, '\n'.join(reversed(list(
+            inner_html
+            for inner_html
+            in generate_inner(years[year], inner_template)
+        )))
+
 def generate_html(folder, output_file,
                   outer_template_file, inner_template_file,
                   annual_template_file=None):
