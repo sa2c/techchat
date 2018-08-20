@@ -1,6 +1,6 @@
 title: 'Building graphical user interfaces for HPC'
 speaker: Mark Dawson
-date: 2018-08-24
+date: 2018-08-23
 abstract: |
   Typical usage of HPC involves logging into a remote shell and invoking commands to manage jobs.
   Whilst convenient and powerful, this can be daunting to newcomers. We present a new, open-source 
