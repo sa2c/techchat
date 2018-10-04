@@ -1,0 +1,12 @@
+title: 'Building graphical user interfaces for HPC'
+speaker: Mark Dawson
+date: 2018-08-23
+abstract: |
+  Typical usage of HPC involves logging into a remote shell and invoking commands to manage jobs.
+  Whilst convenient and powerful, this can be daunting to newcomers. We present a new, open-source 
+  tool which enables developers to quickly and easily configure powerful graphical user interfaces 
+  suitable for non-technical users. This is achieved flexibly by adapting simple Python classes. 
+  The workflow of a HPC job often requires graphical user interactions on desktop machines, for 
+  example interactive job setup or visualisation of results. This tool allows these interactions 
+  to be streamlined and easily managed by non-technical users in a few mouse clicks. Jobs can also 
+  be submitted transparently to multiple HPC systems with different queuing systems.
