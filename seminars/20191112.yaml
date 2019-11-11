@@ -1,0 +1,8 @@
+title: 'Pandas for Flexible Data Analysis'
+speaker: Michele Mesiti
+date: 2019-11-12
+abstract: |
+  In this talk, Michele will introduce Pandas, the dataframe-based data analysis for Python,
+  and how it has improved his data analysis workflows. Then, he will present a case study on
+  how he has made use of Pandas in econometrics and geographical economics, with a look at
+  some of the statistical techniques and challenges associated with this.
