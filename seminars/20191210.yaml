@@ -1,3 +1,19 @@
-title: tbc
-speaker: tbc
+title: Developing and using a cluster of Raspberry Pis for outreach
+speaker: Ed Bennett
 date: 2019-12-10
+abstract: |
+  The Supercomputing Wales project has as one of its goals increasing
+  the public understanding of High-Performance Computing in Wales. 
+  To further this ambition, the RSE team at the Swansea Academy of 
+  Advanced Computing agreed to run a stand at the Swansea Science 
+  Festival 2018. To this end, we assembled a cluster of 16 Raspberry
+  Pi single-board computers, and developed software to demonstrate
+  some of the principles of parallel computing as well one of as the
+  types of problem that the supercomputer in Swansea is used for in
+  research. In this talk, first presented at the RSE Conference 2019,
+  we will describe the process of designing
+  and constructing both the hardware and the software, and some of
+  the challenges we encountered along the way, as well as discussing
+  how well it works as a scaffold to discussions around parallel
+  computing with members of the general public.
+
