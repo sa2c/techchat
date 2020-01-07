@@ -11,3 +11,4 @@ abstract: |
   particular use case for exploiting strace for tracing I/O activity.
   Basic usage examples of strace will be shown, demonstrating how to
   make sense of the output given by the command.
+time: 15:00

@@ -9,3 +9,4 @@ abstract: |
   common programming concepts is assumed. The interplay between these chip design choices which resulted in the recent, 
   highly-publicised Meltdown vulnerability in almost all recent Intel chips will be explained at high level, without assuming 
   knowledge of any specific language.
+time: 15:00

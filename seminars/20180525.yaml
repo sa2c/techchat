@@ -5,3 +5,4 @@ abstract: |
   Sometimes Python is too slow, and numpy has just not got the feature you need. 
   In this talk I'll show how to use Python ctypes to import your functions written 
   in C. Alternatives will also be reviewed.
+time: 15:00

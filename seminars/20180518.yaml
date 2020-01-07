@@ -8,3 +8,4 @@ abstract: |
   I study the performance of a well tuned HPC application when compiled with different 
   versions of gcc, clang and the Intel compiler.
 videoid: yziH9wPLwhw
+time: 15:00

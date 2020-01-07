@@ -14,3 +14,4 @@ abstract: |
   audience, push the "all errors at compile time"-mindset, as well as
   build a solid foundation on which we will base the next talk in the
   series, which is on template metaprogramming.
+time: 15:00

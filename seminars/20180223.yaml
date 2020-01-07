@@ -14,3 +14,4 @@ abstract: |
   specifically using boost::mpl. Finally, if time permits we will have
   a look at how these ideas can be used to write what is known as "expression 
   templates", which is a variant of lazy evaluation at compile time.
+time: 15:00
