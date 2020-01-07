@@ -1,0 +1,9 @@
+title: sort and join (short talk)
+speaker: Mark Dawson
+date: 2020-01-28
+abstract: |
+  sort and join are two frequently-overlooked shell commands, which
+  together can be used to get SQL join-like functionality for plain
+  text files at the command line. This will be a short talk introducing
+  their usage, followed by time for questions and general discussion.
+time: 11:00

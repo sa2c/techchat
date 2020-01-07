@@ -1,6 +1,6 @@
 title: Developing and using a cluster of Raspberry Pis for outreach
 speaker: Ed Bennett
-date: 2019-12-10
+date: 2020-01-14
 abstract: |
   The Supercomputing Wales project has as one of its goals increasing
   the public understanding of High-Performance Computing in Wales. 
@@ -16,4 +16,4 @@ abstract: |
   the challenges we encountered along the way, as well as discussing
   how well it works as a scaffold to discussions around parallel
   computing with members of the general public.
-
+time: 11:00
