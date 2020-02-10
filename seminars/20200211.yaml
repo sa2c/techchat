@@ -1,0 +1,15 @@
+title: "Unsupervised Machine Learning: Aspects of clustering algorithms"
+speaker: Michele Mesiti
+date: 2020-02-11
+abstract: |
+  Clustering algorithms (CA) are a part of machine learning, and are an
+  essential tool for data mining. 
+  Some general-purpose CA are readily available in open source libraries, like 
+  scikit-learn for python, while other ad-hoc algorithm have to be coded from 
+  scratch. 
+  In this Tech Chat a number of CA from the scikit-learn Python library 
+  will be briefly reviewed, with some simple applications to econometrics. 
+  For the rest of the talk we will focus on a specific algorithm for 
+  trajectory-based clustering, describing the motivation framework and 
+  highlighting the most important implementation details and challenges.
+time: 11:00

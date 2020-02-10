@@ -1,0 +1,22 @@
+title: "Multiprocessing and Threading: Going beyond 1 core in Python"
+speaker: Ben Thorpe
+date: 2020-02-25
+abstract: |
+  As high-performance computing has evolved over the last few decades
+  single-core CPU performance has remained fairly flat as More’s law
+  has essentially reached its limit. Instead, the emphasis has been
+  placed on parallel computing with many modern machines making use
+  of four or more CPU cores working on problems in parallel to achieve
+  significant speed-up for certain tasks.
+
+  In this SA2C Tech chat, we will cover using the multiprocessing and
+  Threading modules for writing parallel programs using the Python
+  programing language. We will briefly discuss the pros and cons of
+  this approach along with some examples of the various methods provided
+  by these modules and some tips/things to look out for when using them.
+
+  A basic understanding of programming in Python is all that is necessary.
+  If you have attended our one-day workshop on Software Carpentry you
+  should be well equipped to follow along and this will be a useful talk
+  for taking your Python/software skills further.
+time: 11:00
