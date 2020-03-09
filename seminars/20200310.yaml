@@ -1,0 +1,17 @@
+title: "BSMBench and SOMBRERO: Speed testing supercomputers with physics"
+speaker: Ed Bennett
+date: 2020-03-10
+abstract: |
+  The performance of supercomputers depends on a number of factors. Many of these are
+  characteristics of the machine—for example, the processor speed, the memory bandwidth,
+  the interconnect. But equally important are characteristics of the application, and in
+  many cases the specific problems that the application is solving. BSMBench and SOMBRERO
+  are two benchmark suites, tools used for assessing the performance of a particular problem
+  or piece of software on a particular piece of hardware, developed at Swansea University,
+  which can assess the performance of supercomputers when running problems in lattice gauge
+  theory, and beyond. In this talk, Ed will first introduce the basics of lattice gauge
+  theories for the unfamiliar, then introduce the HiRep suite used to simulate these theories
+  computationally, and then discuss the approaches taken by the two benchmark suites to
+  characterise machines’ performance, and present some characteristic results on various
+  supercomputer platforms
+time: 11:00

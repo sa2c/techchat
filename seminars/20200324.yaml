@@ -1,0 +1,7 @@
+title: "Scraping web content in Python (Singleton venue TBC)"
+speaker: Mark Dawson
+date: 2020-03-24
+abstract: |
+  Mark will introduce the Python packages requests and Beautiful Soup, and show
+  simple ways to combined them to download scrape data from html websites.
+time: 11:00
