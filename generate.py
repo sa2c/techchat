@@ -34,6 +34,8 @@ def get_details(files):
         "disablevideostart": "",
         "disablevideoend": "",
         "videoid": "",
+        "zoom": "",
+        "url": "",
         "title": "[tbc]",
         "speaker": "[tbc]"
     }
@@ -67,7 +69,11 @@ def get_details(files):
         if not detail['abstract']:
             detail['disableabstractstart'] = "<!--"
             detail['disableabstractend'] = "-->"
-        if not detail['videoid']:
+        if detail['videoid']:
+            detail['url'] = f'https://youtu.be/{detail["videoid"]}'
+        elif detail['zoom']:
+            detail['url'] = detail['zoom']
+        else:
             detail['disablevideostart'] = "<!--"
             detail['disablevideoend'] = "-->"
             
