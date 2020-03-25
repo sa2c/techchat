@@ -1,0 +1,7 @@
+title: Sympy
+speaker: Chennakesava Kadapa
+date: 2020-04-14
+abstract: |
+  Symbolic computation is a fascinating topic in computational mathematics. It is a paradigm in which the users work with symbols and semantics rather than numerical values. In this tech chat, we will explore SymPy, an open-source Python library for symbolic computation. We will learn how to use SymPy for algebraic manipulation of polynomials, finding roots of equations, computing derivatives and/or integrals of symbolic expressions, and for applications in tensor calculus using the index notations. This talk will be useful for all those interested in exploring Python and computational mathematics.
+time: 11:00
+zoom: "https://swanseauniversity.zoom.us/j/814376136"
