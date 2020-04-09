@@ -1,0 +1,9 @@
+title: "How to live a happier SSH life"
+speaker: Ed Bennett
+date: 2020-05-26
+abstract: |
+  Out of the box, SSH can be awkward to use, requiring long arcane connection strings to be typed
+  on every login, and constantly-shifting passwords to be remembered. In this Tech Chat, Ed will introduce
+  some of the features in OpenSSH that can make connecting to SSH less of a chore.
+time: 11:00
+zoom: "https://swanseauniversity.zoom.us/j/212389523?pwd=QlV0RE5xcWVnN2wvQlFOaG1EUUFTQT09"

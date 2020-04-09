@@ -1,0 +1,13 @@
+title: Arm-based Machine Learning for HPC
+speaker: Aleksandr Nikolaev
+date: 2020-05-12
+abstract: |
+  In this Tech Chat, Aleksandr will talk about Arm's solutions for HPC, their software ecosystem;
+  Machine Learning Basics, Convolutional Neural Networks, and image classification;
+  Introduction to HPC-ML; a Short overview of TensorFlow and its backend;
+  an overview of Catalyst, and HPC-ML benchmarks;
+  Scaling results for HPC-ML; Profiling results;
+  Where are the hot-spots; Multi-threading in TensorFlow; and,
+  ArmPL sgemm for TensorFlow backend
+time: 11:00
+zoom: "https://swanseauniversity.zoom.us/j/859698560?pwd=dnJsTE9heHdjeFpvQm5qbHhKdG5vQT09"

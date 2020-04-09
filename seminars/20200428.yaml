@@ -1,0 +1,13 @@
+title: "Brief overview of the SLURM job scheduling algorithm"
+speaker: Michele Mesiti
+date: 2020-04-28
+abstract: |
+  When working with a supercomputing cluster it can be frustrating at times to 
+  have to wait for your job to start. The system responsible for this works 
+  according to a small set of rules that can hopefully be explained in a short 
+  tech chat like this. We are going to focus on the algorithm used by the SLURM 
+  workload manager (Simple Linux Utility for Resource Management) for scheduling 
+  jobs and discuss the factors in the priority formula, the backfill passes, and 
+  the tools that can help us understanding what is going on.
+time: 11:00
+zoom: "https://swanseauniversity.zoom.us/j/749230105?pwd=N0JqRC9yNTV0V0lPaEhMb2Y0dHE3dz09"
