@@ -59,6 +59,16 @@ def get_details(files):
             detail['time'] = (
                 nulldate + datetime.timedelta(minutes=detail['time'])
             ).time()
+        if not detail['abstract']:
+            detail['disableabstractstart'] = "<!--"
+            detail['disableabstractend'] = "-->"
+        if detail['videoid']:
+            detail['url'] = f'https://youtu.be/{detail["videoid"]}'
+        elif detail['zoom'] and detail in future:
+            detail['url'] = detail['zoom']
+        else:
+            detail['disablevideostart'] = "<!--"
+            detail['disablevideoend'] = "-->"
         detail['id'] = md5(repr(detail).encode()).hexdigest()
         if detail['id'] not in ids:
             ids.add(detail['id'])
@@ -66,16 +76,6 @@ def get_details(files):
                 past.append(detail)
             else:
                 future.append(detail)
-        if not detail['abstract']:
-            detail['disableabstractstart'] = "<!--"
-            detail['disableabstractend'] = "-->"
-        if detail['videoid']:
-            detail['url'] = f'https://youtu.be/{detail["videoid"]}'
-        elif detail['zoom']:
-            detail['url'] = detail['zoom']
-        else:
-            detail['disablevideostart'] = "<!--"
-            detail['disablevideoend'] = "-->"
             
     return past, future
 
