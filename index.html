@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <meta charset="utf-8">
+    <TITLE>SA2C Tech Chat</TITLE>
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script type="text/javascript">
+    function open_close(id) {
+      var display = document.getElementById(id).style.display;
+      document.getElementById(id).style.display = (display == "inline" ? "none" : "inline");
+    }
+    function abstract(id) {
+      var display = document.getElementById(id).style.display;
+      document.getElementById(id).style.display = (display == "inline" ? "none" : "inline");
+      document.getElementById(id + 'show').style.display = (display == "inline" ? "inline" : "none");
+    }
+    </script>
+  </HEAD>
+  <BODY>
+    <div class="header">
+      <div class="innerheader">
+	<img src="images/logo.png" alt="SA2C logo" height="100px" class="title" />
+	<span class="title">
+	  Swansea Academy of Advanced Computing<br />
+	  Academi Uwch Gyfrifiadureg Abertawe
+	</span>
+      </div>
+    </div>
+    <H1>SA2C Tech Chat</H1>
+    <p>Second and fourth Tuesdays of each month, 11am. <!--, Computational Foundry Room 201 (with video link to Talbot 134 unless otherwise stated)--></p>
+    <p>Talks take place on Zoom, with the title of the chat also being a link to join the Zoom meeting.</p>
+    <!--<p>SA2C Tech Chat is intended to provide a venue for interesting technical discussions relevant to users of High Performance Computing. The approximate format is a 15 minute talk on an interesting technique, tool, or piece of work, followed by open discussion of the topics raised, and of any other topics of interest to those in the room.</p>-->
+    <p>We are always looking for new topics and speakers. If you have a topic you'd like to talk about, then please drop an email to <a href="mailto:e.j.bennett@swansea.ac.uk?subject=I%20want%20to%20give%20an%20SA2C%20Tech%20Chat%21">Ed Bennett</a>. If you don't know what to talk about (or want to propose a topic for someone else to talk about), <a href="proposed.html">this list</a> will provide some inspiration.</p>
+    <!--<p>Tech Chats are currently on hiatus while arrangements are made following the move to the Computational Foundry. For updates on the next Tech Chat, as well as other SA2C news, please subscribe to the <a href="https://mailman.swan.ac.uk/mailman/listinfo/sa2c-users">SA2C users mailing list</a>.-->
+    <p>Where the speaker consents, talks are recorded and available on the <a href="https://www.youtube.com/channel/UC-IZYAmsqt5H81kapNL388A">SA2C YouTube Channel</a>; individual talks are linked below.</a></p>
+  <!--<H2><span class="scriptlink" onClick="open_close('upcoming');">Upcoming</span></H2>-->
+  <div id="upcoming" style="display:inline">
+    <TABLE>
+    <col class="date" />
+    <col class="name" />
+    <col class="title" />
+    
+    </TABLE>
+  </div>
+
+  <H2><span class="scriptlink" onClick="open_close('past');">Past events</span></H2>
+  <div id="past" style="display:inline">
+      <H2><span class="scriptlink" onClick="open_close('2020');">2020</span></H2>
+  <div id="2020" style="display:inline">
+    <TABLE>
+    <col class="date" />
+    <col class="name" />
+    <col class="title" />
+          <TR><td>2020-05-26<BR>11:00:00</TD>
+	<td>Ed Bennett</TD>
+	<td><a href="https://youtu.be/iZQkfdGRBKo">How to live a happier SSH life</a>
+	  <div id="2922c7fc28dfdd9e0979b2f506726df4show" style="display:inline"><span class="scriptlink" onClick="abstract('2922c7fc28dfdd9e0979b2f506726df4');">Show abstract</span></div><div id="2922c7fc28dfdd9e0979b2f506726df4" style="display:none"><br />Out of the box, SSH can be awkward to use, requiring long arcane connection strings to be typed
+on every login, and constantly-shifting passwords to be remembered. In this Tech Chat, Ed will introduce
+some of the features in OpenSSH that can make connecting to SSH less of a chore.
+
+	    <span class="scriptlink" onClick="abstract('2922c7fc28dfdd9e0979b2f506726df4');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2020-05-12<BR>11:00:00</TD>
+	<td>Aleksandr Nikolaev</TD>
+	<td><!--<a href="">-->Arm-based Machine Learning for HPC<!--</a>-->
+	  <div id="45b51709243a81813e71e956a1e4365eshow" style="display:inline"><span class="scriptlink" onClick="abstract('45b51709243a81813e71e956a1e4365e');">Show abstract</span></div><div id="45b51709243a81813e71e956a1e4365e" style="display:none"><br />In this Tech Chat, Aleksandr will talk about Arm's solutions for HPC, their software ecosystem;
+Machine Learning Basics, Convolutional Neural Networks, and image classification;
+Introduction to HPC-ML; a Short overview of TensorFlow and its backend;
+an overview of Catalyst, and HPC-ML benchmarks;
+Scaling results for HPC-ML; Profiling results;
+Where are the hot-spots; Multi-threading in TensorFlow; and,
+ArmPL sgemm for TensorFlow backend
+
+	    <span class="scriptlink" onClick="abstract('45b51709243a81813e71e956a1e4365e');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2020-04-28<BR>11:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td><a href="https://youtu.be/p8ebqQ9CHFU">Brief overview of the SLURM job scheduling algorithm</a>
+	  <div id="8cd52af3da5c1abe591e116d52e900d2show" style="display:inline"><span class="scriptlink" onClick="abstract('8cd52af3da5c1abe591e116d52e900d2');">Show abstract</span></div><div id="8cd52af3da5c1abe591e116d52e900d2" style="display:none"><br />When working with a supercomputing cluster it can be frustrating at times to 
+have to wait for your job to start. The system responsible for this works 
+according to a small set of rules that can hopefully be explained in a short 
+tech chat like this. We are going to focus on the algorithm used by the SLURM 
+workload manager (Simple Linux Utility for Resource Management) for scheduling 
+jobs and discuss the factors in the priority formula, the backfill passes, and 
+the tools that can help us understanding what is going on.
+
+	    <span class="scriptlink" onClick="abstract('8cd52af3da5c1abe591e116d52e900d2');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2020-04-14<BR>11:00:00</TD>
+	<td>Chennakesava Kadapa</TD>
+	<td><a href="https://youtu.be/ULUa0QVI2Q4">Sympy</a>
+	  <div id="19f1a81e6f7cd0c4f37226fdedd7f80bshow" style="display:inline"><span class="scriptlink" onClick="abstract('19f1a81e6f7cd0c4f37226fdedd7f80b');">Show abstract</span></div><div id="19f1a81e6f7cd0c4f37226fdedd7f80b" style="display:none"><br />Symbolic computation is a fascinating topic in computational mathematics. It is a paradigm in which the users work with symbols and semantics rather than numerical values. In this tech chat, we will explore SymPy, an open-source Python library for symbolic computation. We will learn how to use SymPy for algebraic manipulation of polynomials, finding roots of equations, computing derivatives and/or integrals of symbolic expressions, and for applications in tensor calculus using the index notations. This talk will be useful for all those interested in exploring Python and computational mathematics.
+
+	    <span class="scriptlink" onClick="abstract('19f1a81e6f7cd0c4f37226fdedd7f80b');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2020-03-24<BR>11:00:00</TD>
+	<td>Mark Dawson</TD>
+	<td><!--<a href="">-->Scraping web content in Python<!--</a>-->
+	  <div id="c27be3fa41a62ba5c7c10a0cedf3ecf2show" style="display:inline"><span class="scriptlink" onClick="abstract('c27be3fa41a62ba5c7c10a0cedf3ecf2');">Show abstract</span></div><div id="c27be3fa41a62ba5c7c10a0cedf3ecf2" style="display:none"><br />Mark will introduce the Python packages requests and Beautiful Soup, and show
+simple ways to combined them to download scrape data from html websites.
+
+	    <span class="scriptlink" onClick="abstract('c27be3fa41a62ba5c7c10a0cedf3ecf2');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2020-03-10<BR>11:00:00</TD>
+	<td>Ed Bennett</TD>
+	<td><a href="https://youtu.be/80LnJrL9QgA">BSMBench and SOMBRERO: Speed testing supercomputers with physics</a>
+	  <div id="e63df65659af1faba087c243be5e4392show" style="display:inline"><span class="scriptlink" onClick="abstract('e63df65659af1faba087c243be5e4392');">Show abstract</span></div><div id="e63df65659af1faba087c243be5e4392" style="display:none"><br />The performance of supercomputers depends on a number of factors. Many of these are
+characteristics of the machine—for example, the processor speed, the memory bandwidth,
+the interconnect. But equally important are characteristics of the application, and in
+many cases the specific problems that the application is solving. BSMBench and SOMBRERO
+are two benchmark suites, tools used for assessing the performance of a particular problem
+or piece of software on a particular piece of hardware, developed at Swansea University,
+which can assess the performance of supercomputers when running problems in lattice gauge
+theory, and beyond. In this talk, Ed will first introduce the basics of lattice gauge
+theories for the unfamiliar, then introduce the HiRep suite used to simulate these theories
+computationally, and then discuss the approaches taken by the two benchmark suites to
+characterise machines’ performance, and present some characteristic results on various
+supercomputer platforms
+
+	    <span class="scriptlink" onClick="abstract('e63df65659af1faba087c243be5e4392');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2020-02-25<BR>11:00:00</TD>
+	<td>Ben Thorpe</TD>
+	<td><!--<a href="">-->Multiprocessing and Threading: Going beyond 1 core in Python<!--</a>-->
+	  <div id="0df5fe948faeee1687349b718036f839show" style="display:inline"><span class="scriptlink" onClick="abstract('0df5fe948faeee1687349b718036f839');">Show abstract</span></div><div id="0df5fe948faeee1687349b718036f839" style="display:none"><br />As high-performance computing has evolved over the last few decades
+single-core CPU performance has remained fairly flat as More’s law
+has essentially reached its limit. Instead, the emphasis has been
+placed on parallel computing with many modern machines making use
+of four or more CPU cores working on problems in parallel to achieve
+significant speed-up for certain tasks.
+
+In this SA2C Tech chat, we will cover using the multiprocessing and
+Threading modules for writing parallel programs using the Python
+programing language. We will briefly discuss the pros and cons of
+this approach along with some examples of the various methods provided
+by these modules and some tips/things to look out for when using them.
+
+A basic understanding of programming in Python is all that is necessary.
+If you have attended our one-day workshop on Software Carpentry you
+should be well equipped to follow along and this will be a useful talk
+for taking your Python/software skills further.
+
+	    <span class="scriptlink" onClick="abstract('0df5fe948faeee1687349b718036f839');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2020-02-11<BR>11:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td><a href="https://youtu.be/47pMxqaSPF4">Unsupervised Machine Learning: Aspects of clustering algorithms</a>
+	  <div id="9925b3970bd112055157e517ebe46858show" style="display:inline"><span class="scriptlink" onClick="abstract('9925b3970bd112055157e517ebe46858');">Show abstract</span></div><div id="9925b3970bd112055157e517ebe46858" style="display:none"><br />Clustering algorithms (CA) are a part of machine learning, and are an
+essential tool for data mining. 
+Some general-purpose CA are readily available in open source libraries, like 
+scikit-learn for python, while other ad-hoc algorithm have to be coded from 
+scratch. 
+In this Tech Chat a number of CA from the scikit-learn Python library 
+will be briefly reviewed, with some simple applications to econometrics. 
+For the rest of the talk we will focus on a specific algorithm for 
+trajectory-based clustering, describing the motivation framework and 
+highlighting the most important implementation details and challenges.
+
+	    <span class="scriptlink" onClick="abstract('9925b3970bd112055157e517ebe46858');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2020-01-28<BR>11:00:00</TD>
+	<td>Mark Dawson</TD>
+	<td><a href="https://youtu.be/WQMHDRmtHqM">sort and join (short talk)</a>
+	  <div id="ff24888774994f14fd95f5fa84569891show" style="display:inline"><span class="scriptlink" onClick="abstract('ff24888774994f14fd95f5fa84569891');">Show abstract</span></div><div id="ff24888774994f14fd95f5fa84569891" style="display:none"><br />sort and join are two frequently-overlooked shell commands, which
+together can be used to get SQL join-like functionality for plain
+text files at the command line. This will be a short talk introducing
+their usage, followed by time for questions and general discussion.
+
+	    <span class="scriptlink" onClick="abstract('ff24888774994f14fd95f5fa84569891');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2020-01-14<BR>11:00:00</TD>
+	<td>Ed Bennett</TD>
+	<td><a href="https://youtu.be/AN_XOzp7mtM">Developing and using a cluster of Raspberry Pis for outreach</a>
+	  <div id="5c93dc81231205ed11209ec769c27395show" style="display:inline"><span class="scriptlink" onClick="abstract('5c93dc81231205ed11209ec769c27395');">Show abstract</span></div><div id="5c93dc81231205ed11209ec769c27395" style="display:none"><br />The Supercomputing Wales project has as one of its goals increasing
+the public understanding of High-Performance Computing in Wales. 
+To further this ambition, the RSE team at the Swansea Academy of 
+Advanced Computing agreed to run a stand at the Swansea Science 
+Festival 2018. To this end, we assembled a cluster of 16 Raspberry
+Pi single-board computers, and developed software to demonstrate
+some of the principles of parallel computing as well one of as the
+types of problem that the supercomputer in Swansea is used for in
+research. In this talk, first presented at the RSE Conference 2019,
+we will describe the process of designing
+and constructing both the hardware and the software, and some of
+the challenges we encountered along the way, as well as discussing
+how well it works as a scaffold to discussions around parallel
+computing with members of the general public.
+
+	    <span class="scriptlink" onClick="abstract('5c93dc81231205ed11209ec769c27395');">Hide abstract</span></div></TD></TR>
+
+    </TABLE>
+  </div>
+
+  <H2><span class="scriptlink" onClick="open_close('2019');">2019</span></H2>
+  <div id="2019" style="display:inline">
+    <TABLE>
+    <col class="date" />
+    <col class="name" />
+    <col class="title" />
+          <TR><td>2019-11-12<BR>11:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td><a href="https://youtu.be/H7kdGl9h7Bo">Pandas for Flexible Data Analysis</a>
+	  <div id="f1735e6948189401bfaadd1f95bd05ceshow" style="display:inline"><span class="scriptlink" onClick="abstract('f1735e6948189401bfaadd1f95bd05ce');">Show abstract</span></div><div id="f1735e6948189401bfaadd1f95bd05ce" style="display:none"><br />In this talk, Michele will introduce Pandas, the dataframe-based data analysis for Python,
+and how it has improved his data analysis workflows. Then, he will present a case study on
+how he has made use of Pandas in econometrics and geographical economics, with a look at
+some of the statistical techniques and challenges associated with this.
+
+	    <span class="scriptlink" onClick="abstract('f1735e6948189401bfaadd1f95bd05ce');">Hide abstract</span></div></TD></TR>
+
+    </TABLE>
+  </div>
+
+  <H2><span class="scriptlink" onClick="open_close('2018');">2018</span></H2>
+  <div id="2018" style="display:inline">
+    <TABLE>
+    <col class="date" />
+    <col class="name" />
+    <col class="title" />
+          <TR><td>2018-10-05<BR>15:00:00</TD>
+	<td>Mark Dawson</TD>
+	<td><!--<a href="">-->Lisp for Python programmers<!--</a>-->
+	  <div id="9cfc1af219df0eca5e9d56c80bb3f175show" style="display:inline"><span class="scriptlink" onClick="abstract('9cfc1af219df0eca5e9d56c80bb3f175');">Show abstract</span></div><div id="9cfc1af219df0eca5e9d56c80bb3f175" style="display:none"><br />An introduction to one of the oldest languages still in common use, and a comparison to the features of the popular Python lanaguage. 
+The talk will consist of an introduction to the syntax of Lisp, in a simple accessible format.
+
+	    <span class="scriptlink" onClick="abstract('9cfc1af219df0eca5e9d56c80bb3f175');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-09-28<BR>15:00:00</TD>
+	<td>Chennakesava Kadapa</TD>
+	<td><a href="https://youtu.be/C9zvTqb0GlM">Data visualisation with VTK and Paraview</a>
+	  <!--<div id="49ba8a847dde580835bad32045dd87bfshow" style="display:inline"><span class="scriptlink" onClick="abstract('49ba8a847dde580835bad32045dd87bf');">Show abstract</span></div><div id="49ba8a847dde580835bad32045dd87bf" style="display:none"><br />
+	    <span class="scriptlink" onClick="abstract('49ba8a847dde580835bad32045dd87bf');">Hide abstract</span></div>--></TD></TR>
+
+      <TR><td>2018-09-14<BR>15:00:00</TD>
+	<td>James Stovold</TD>
+	<td><a href="https://youtu.be/rG7yv6m7eis">Whirlwind tour of R</a>
+	  <!--<div id="c48357a2eb1ba0be585c4f6f239d3c20show" style="display:inline"><span class="scriptlink" onClick="abstract('c48357a2eb1ba0be585c4f6f239d3c20');">Show abstract</span></div><div id="c48357a2eb1ba0be585c4f6f239d3c20" style="display:none"><br />
+	    <span class="scriptlink" onClick="abstract('c48357a2eb1ba0be585c4f6f239d3c20');">Hide abstract</span></div>--></TD></TR>
+
+      <TR><td>2018-08-17<BR>15:00:00</TD>
+	<td>Chenna Kadapa</TD>
+	<td><a href="https://youtu.be/qdjWQH2bxuY">A short introduction to PETSc</a>
+	  <div id="9c0dc188f40660491f8d4dce5e9d0074show" style="display:inline"><span class="scriptlink" onClick="abstract('9c0dc188f40660491f8d4dce5e9d0074');">Show abstract</span></div><div id="9c0dc188f40660491f8d4dce5e9d0074" style="display:none"><br />In this talk, we will have a short introduction to PETSc. We will look 
+at some important data structures and utilities in PETSc that are very 
+useful for computational scientists interested in developing codes for 
+HPC architectures. We will look at some important aspects of PETSc that 
+makes it so powerful and flexible.
+
+	    <span class="scriptlink" onClick="abstract('9c0dc188f40660491f8d4dce5e9d0074');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-08-10<BR>15:00:00</TD>
+	<td>Ed Bennett</TD>
+	<td><a href="https://youtu.be/TYzMlV5OctE">Beyond MPI_Send: What I learned implementing MPI for halo exchange</a>
+	  <div id="78bec570ac84b37626954faf6369ccbashow" style="display:inline"><span class="scriptlink" onClick="abstract('78bec570ac84b37626954faf6369ccba');">Show abstract</span></div><div id="78bec570ac84b37626954faf6369ccba" style="display:none"><br />In this talk, Ed will walk through the process of implementing MPI into a
+piece of Lattice Field Theory software written in Fortran. Along the way,
+various parts of the MPI standard not typically visited during tutorials
+will be described. Some performance data will also be shown.
+
+	    <span class="scriptlink" onClick="abstract('78bec570ac84b37626954faf6369ccba');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-08-03<BR>15:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td><a href="https://youtu.be/imV0XrjikJw">Profiling with Intel Tools</a>
+	  <div id="5ceb652ce610ef0604f023ec6144e55bshow" style="display:inline"><span class="scriptlink" onClick="abstract('5ceb652ce610ef0604f023ec6144e55b');">Show abstract</span></div><div id="5ceb652ce610ef0604f023ec6144e55b" style="display:none"><br />In this week TechChat we are having a look at VTune and ITAC, the notorious performance 
+analysis tools by Intel, using the profiling and optimisation of a Lattice Field Theory 
+code as an example.
+
+	    <span class="scriptlink" onClick="abstract('5ceb652ce610ef0604f023ec6144e55b');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-07-27<BR>15:00:00</TD>
+	<td>Ed Bennett</TD>
+	<td><a href="https://youtu.be/a26UhdCCOCw">What even is the module command?</a>
+	  <div id="b37a722e10eb7298665c3a8b8dc50c49show" style="display:inline"><span class="scriptlink" onClick="abstract('b37a722e10eb7298665c3a8b8dc50c49');">Show abstract</span></div><div id="b37a722e10eb7298665c3a8b8dc50c49" style="display:none"><br />The module command is frequently provided on HPC systems to give access
+to a wide array of often mutually incompatible software, but sometimes it
+has limitations which seem restrictive or quirky. In this Tech Chat we will
+explore the structure and mechanisms of the underlying implementation of 
+the module command to find the origin of these limitations.
+
+	    <span class="scriptlink" onClick="abstract('b37a722e10eb7298665c3a8b8dc50c49');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-07-20<BR>15:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td><a href="https://youtu.be/wCB9K3s4xd0">Examples of GPU programming</a>
+	  <div id="fca398f747a90b8ac6c9793141c2a303show" style="display:inline"><span class="scriptlink" onClick="abstract('fca398f747a90b8ac6c9793141c2a303');">Show abstract</span></div><div id="fca398f747a90b8ac6c9793141c2a303" style="display:none"><br />In this TechChat, Michele will show some examples of GPU programming, making use of CUDA, OpenCL, and OpenACC.
+He will also show an example of a very simple OpenGL application.
+
+	    <span class="scriptlink" onClick="abstract('fca398f747a90b8ac6c9793141c2a303');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-07-13<BR>15:00:00</TD>
+	<td>Jarno Rantaharju</TD>
+	<td><a href="https://youtu.be/8NLKNvFQjrY">Introduction to GPUs: what it is and what you can do with it</a>
+	  <div id="c4a421c4f218376ddffa1cda853ec11dshow" style="display:inline"><span class="scriptlink" onClick="abstract('c4a421c4f218376ddffa1cda853ec11d');">Show abstract</span></div><div id="c4a421c4f218376ddffa1cda853ec11d" style="display:none"><br />Graphical Processing Units (GPU) are frequently used to solve computationally intensive problems. 
+They are well suited for computationally intensive problems, such as machine learning, but the power 
+comes with limitations. I will give an overview of the history and the technical details of modern GPUs 
+and contrast them with other computing platforms.
+
+	    <span class="scriptlink" onClick="abstract('c4a421c4f218376ddffa1cda853ec11d');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-07-06<BR>15:00:00</TD>
+	<td>Mark Dawson</TD>
+	<td><a href="https://youtu.be/2hW-Ye1yRyk">What programming paradigms?</a>
+	  <div id="38e286fae6c6859a0c9060c9175c9f8ashow" style="display:inline"><span class="scriptlink" onClick="abstract('38e286fae6c6859a0c9060c9175c9f8a');">Show abstract</span></div><div id="38e286fae6c6859a0c9060c9175c9f8a" style="display:none"><br />We introduce and define a number of different programming paradigms, 
+and briefly discuss some possible merits and drawbacks of each. An 
+extended group discussion will give an opportunity to specify options, 
+preferences and experiences with various paradigms.
+
+	    <span class="scriptlink" onClick="abstract('38e286fae6c6859a0c9060c9175c9f8a');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-06-29<BR>15:00:00</TD>
+	<td>Mark Dawson</TD>
+	<td><a href="https://youtu.be/xKVgt2GTn2s">Git: Demystified</a>
+	  <div id="c0536a4c9399a18e311e3b5dc10670a6show" style="display:inline"><span class="scriptlink" onClick="abstract('c0536a4c9399a18e311e3b5dc10670a6');">Show abstract</span></div><div id="c0536a4c9399a18e311e3b5dc10670a6" style="display:none"><br />Ever wondered how git really works? Where and how does it store it's data and what exactly is being stored? Can we peek into the database at 
+files, commits, branches and directory trees? What information is git storing and how? How is this different from other version control systems?
+We take a peek under the hood to see what and how information is being stored and manipulated in our day-to-day git usage, and how this can leads 
+to being more productive with git.
+
+	    <span class="scriptlink" onClick="abstract('c0536a4c9399a18e311e3b5dc10670a6');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-06-22<BR>15:00:00</TD>
+	<td>Jarno Rantaharju</TD>
+	<td><a href="https://youtu.be/Y-4KBVx4gtI">Open Source Licenses</a>
+	  <div id="b16ba2687744ca154e4e9839911ff20ashow" style="display:inline"><span class="scriptlink" onClick="abstract('b16ba2687744ca154e4e9839911ff20a');">Show abstract</span></div><div id="b16ba2687744ca154e4e9839911ff20a" style="display:none"><br />Which open source license should you choose when you publish your scientific code? 
+There are several public software licenses giving slightly different permissions and 
+imposing slightly different restrictions to using your code.  I will introduce the 
+most common options, from a public domain declaration to no license at all, and outline 
+their features and problems for scientific code.
+
+	    <span class="scriptlink" onClick="abstract('b16ba2687744ca154e4e9839911ff20a');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-06-15<BR>15:00:00</TD>
+	<td>Ed Bennett</TD>
+	<td><a href="https://youtu.be/bvFRwRg6P5Y">Staying sane in Python with virtual environments</a>
+	  <div id="344d8432cd527380bc22624dc907988dshow" style="display:inline"><span class="scriptlink" onClick="abstract('344d8432cd527380bc22624dc907988d');">Show abstract</span></div><div id="344d8432cd527380bc22624dc907988d" style="display:none"><br />One of Python's most attractive features and the source of much of its power  is its extensive library of 
+third-party modules and libraries. However, when too many libraries are installed, it becomes difficult to
+manage keeping compatible versions, and to move applications between machines. In this Tech Chat, Ed will 
+introduce some of the tooling available to make these experiences easier, including conda, virtualenv, and 
+pipenv.
+
+	    <span class="scriptlink" onClick="abstract('344d8432cd527380bc22624dc907988d');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-06-08<BR>15:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td><a href="https://youtu.be/5moS8Whaops">Structural Design Patterns</a>
+	  <div id="51b01df0175f2da09d99dcb5789e50eeshow" style="display:inline"><span class="scriptlink" onClick="abstract('51b01df0175f2da09d99dcb5789e50ee');">Show abstract</span></div><div id="51b01df0175f2da09d99dcb5789e50ee" style="display:none"><br />Using well known patterns in designing software can help greatly in developing code that is easier to maintain, 
+to extend and to understand for other people. In this Tech Chat I will discuss some of the most common ones in 
+the category of "Structural Patterns" and compare them.
+
+	    <span class="scriptlink" onClick="abstract('51b01df0175f2da09d99dcb5789e50ee');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-06-01<BR>15:00:00</TD>
+	<td>Jonas Rylund Glesaaen</TD>
+	<td><!--<a href="">-->Why are there no good build systems? An introduction to Bazel<!--</a>-->
+	  <div id="0f8946f6e2e4f777b9534b97fe548fa9show" style="display:inline"><span class="scriptlink" onClick="abstract('0f8946f6e2e4f777b9534b97fe548fa9');">Show abstract</span></div><div id="0f8946f6e2e4f777b9534b97fe548fa9" style="display:none"><br />A good build system is essential for any large scale project. If set up properly it makes it 
+easy to compile often, which in turn incentivises active debugging, frequent unit testing, and making sure all your git commits compile.
+
+My question for the talk is this: If they are such important tools, and have been around for more than 50 years, why are there no good ones?
+
+In the talk I will highlight some of the things that are important to me and go through some scenarios I have encountered recently. I will 
+also talk about the systems I have personally used, systems I have researched, and most importantly, about Bazel, the newest tool in my toolbox and 
+how it solves some of my grievances (and not others).
+
+	    <span class="scriptlink" onClick="abstract('0f8946f6e2e4f777b9534b97fe548fa9');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-05-25<BR>15:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td><!--<a href="">-->Using C from Python: the ctypes library<!--</a>-->
+	  <div id="23a0cc5e0df0a7293f9a6ff041ca0022show" style="display:inline"><span class="scriptlink" onClick="abstract('23a0cc5e0df0a7293f9a6ff041ca0022');">Show abstract</span></div><div id="23a0cc5e0df0a7293f9a6ff041ca0022" style="display:none"><br />Sometimes Python is too slow, and numpy has just not got the feature you need. 
+In this talk I'll show how to use Python ctypes to import your functions written 
+in C. Alternatives will also be reviewed.
+
+	    <span class="scriptlink" onClick="abstract('23a0cc5e0df0a7293f9a6ff041ca0022');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-05-18<BR>15:00:00</TD>
+	<td>Jarno Rantaharju</TD>
+	<td><a href="https://youtu.be/yziH9wPLwhw">Benchmarking C compilers</a>
+	  <div id="353f4a9c05651b61b67ca749ffebe65ashow" style="display:inline"><span class="scriptlink" onClick="abstract('353f4a9c05651b61b67ca749ffebe65a');">Show abstract</span></div><div id="353f4a9c05651b61b67ca749ffebe65a" style="display:none"><br />The compiler used to turn human readable code into a machine readable object file 
+naturally has an effect on performance. We usually remember to tune compiler flags 
+to fit the application, but the different compiler versions can behave differently. 
+I study the performance of a well tuned HPC application when compiled with different 
+versions of gcc, clang and the Intel compiler.
+
+	    <span class="scriptlink" onClick="abstract('353f4a9c05651b61b67ca749ffebe65a');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-05-11<BR>15:00:00</TD>
+	<td>Mark Dawson</TD>
+	<td><a href="https://youtu.be/ps2fFUds4WY">To MVC or not to MVC?</a>
+	  <div id="b4256cd64c37e1aac1d5c8d335715e70show" style="display:inline"><span class="scriptlink" onClick="abstract('b4256cd64c37e1aac1d5c8d335715e70');">Show abstract</span></div><div id="b4256cd64c37e1aac1d5c8d335715e70" style="display:none"><br />First introduced in the 1970s, the Model-View-Controller and its variations are arguably 
+the the most popular and long-lived design patterns for building modular, maintainable 
+and extensible interactive applications for desktop, web and mobile. We introduce the 
+fundamental concepts necessary to start using the pattern, and outline its strengths 
+and weaknesses. Frameworks which leverage concepts from MVC, such as Qt/PyQt and Rails, 
+will be introduced and the advantages and limitations of MVC design discussed.
+
+	    <span class="scriptlink" onClick="abstract('b4256cd64c37e1aac1d5c8d335715e70');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-05-04<BR>15:00:00</TD>
+	<td>Ed Bennett</TD>
+	<td><a href="https://youtu.be/h6gYY7GSBl0">Spellcheck for Code, or: How I learned to stop worrying and love the linter</a>
+	  <div id="1c7dcb86716d43761a76fd21d9b9f8ecshow" style="display:inline"><span class="scriptlink" onClick="abstract('1c7dcb86716d43761a76fd21d9b9f8ec');">Show abstract</span></div><div id="1c7dcb86716d43761a76fd21d9b9f8ec" style="display:none"><br />Background compilation, incremental compilation, on-the-fly syntax checking,
+or "red squiggles in your editor" have been available for almost two decades,
+but are still sadly underused by many developers, in particular those who do
+not use an IDE where they are enabled by default. In this Tech Chat, I will
+briefly outline the history of the red squiggle, show how you can get them in
+your editor, and try to convince you that it is something you want to do.
+
+	    <span class="scriptlink" onClick="abstract('1c7dcb86716d43761a76fd21d9b9f8ec');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-04-27<BR>15:00:00</TD>
+	<td>Mark Dawson</TD>
+	<td><a href="https://youtu.be/_y4OuHfxgmI">Emacs for vim users</a>
+	  <div id="c226db12a6f9505cef29078fde82ae4bshow" style="display:inline"><span class="scriptlink" onClick="abstract('c226db12a6f9505cef29078fde82ae4b');">Show abstract</span></div><div id="c226db12a6f9505cef29078fde82ae4b" style="display:none"><br />At this TechChat, we'll take a look at spacemacs, a popular new 
+configuration for the emacs editor. This provides, amongst other things, 
+a near-identical replication of vim within emacs. Seasoned vim users can 
+access unparalleled configurability and extendability of emacs, without 
+the need to learn new keybindings for editing. The configuration is 
+designed to make emacs easily discoverable and make common configurations 
+simple. Vanilla emacs users can have the convenience of simple modular 
+configuration, whilst taking advantage of a powerful modular configuration 
+and switching between vim and emacs style with a single keystroke.
+
+	    <span class="scriptlink" onClick="abstract('c226db12a6f9505cef29078fde82ae4b');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-04-20<BR>15:00:00</TD>
+	<td>Sean Walton</TD>
+	<td><a href="https://youtu.be/tes16ZS787c">Developing Augmented Reality Applications for the HoloLens</a>
+	  <div id="4da97b1371f9360b0403f8f4ae103f8bshow" style="display:inline"><span class="scriptlink" onClick="abstract('4da97b1371f9360b0403f8f4ae103f8b');">Show abstract</span></div><div id="4da97b1371f9360b0403f8f4ae103f8b" style="display:none"><br />The Microsoft HoloLens is an self contained augmented reality headset and computer. 
+The College of Science and Swansea Academy of Learning and Teaching have invested in 
+a number of devices to explore potential applications to teaching and learning. In 
+this talk I will be sharing my experiences developing prototypes for the HoloLens. 
+I'll focus on the capabilities of the device and the challenges of creating augmented 
+reality experiences in environments you've never seen.
+
+	    <span class="scriptlink" onClick="abstract('4da97b1371f9360b0403f8f4ae103f8b');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-04-13<BR>15:00:00</TD>
+	<td>Jarno Rantaharju</TD>
+	<td><a href="https://youtu.be/ZAWRK4JZ2ts">Introduction to Neural Networks</a>
+	  <div id="8ad1324400690cc3c206bbc9ac7b1887show" style="display:inline"><span class="scriptlink" onClick="abstract('8ad1324400690cc3c206bbc9ac7b1887');">Show abstract</span></div><div id="8ad1324400690cc3c206bbc9ac7b1887" style="display:none"><br />Continuing on the theme of Machine Learning, I will give a brief 
+technical introduction to Artificial Neural Networks and Deep Learning. 
+Starting from the simple artificial neuron, I will describe the general 
+construction of classifiers, generative models and recurrent neural 
+networks, as well as training the networks using Gradient Descent 
+Algorithms.
+
+	    <span class="scriptlink" onClick="abstract('8ad1324400690cc3c206bbc9ac7b1887');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-04-06<BR>15:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td><a href="https://youtu.be/1hnjnFJWEb8">Aspects of Machine Learning</a>
+	  <div id="9a616bd19d0070668301ccc93dfeb326show" style="display:inline"><span class="scriptlink" onClick="abstract('9a616bd19d0070668301ccc93dfeb326');">Show abstract</span></div><div id="9a616bd19d0070668301ccc93dfeb326" style="display:none"><br />In this Tech Chat I will discuss foundations and problems in Machine Learning in its three main flavours 
+(supervised, unsupervised and "reinforcement"), in the hope of giving the context for future Tech Chats 
+on more specific areas and techniques. I will also try to give a historical perspective and some examples in 
+order to better illustrate some basic principles, with the aim of sparking discussion and experience sharing 
+in the audience.
+
+	    <span class="scriptlink" onClick="abstract('9a616bd19d0070668301ccc93dfeb326');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-03-23<BR>15:00:00</TD>
+	<td>Ed Bennett</TD>
+	<td><a href="https://youtu.be/6JDmKwUUoQI">Structuring Large Python Projects</a>
+	  <div id="69309ced3b410a6f22e4f6953925d253show" style="display:inline"><span class="scriptlink" onClick="abstract('69309ced3b410a6f22e4f6953925d253');">Show abstract</span></div><div id="69309ced3b410a6f22e4f6953925d253" style="display:none"><br />What do you do when your Python projects become too large to manage 
+by simply sticking a bunch of Python files in a folder? How can you 
+nest packages to best make your code maintainable and reusable?
+In this talk I will discuss some best practices and strategies to
+structuring large projects, drawing from case studies in the Python
+standard library.
+
+	    <span class="scriptlink" onClick="abstract('69309ced3b410a6f22e4f6953925d253');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-03-16<BR>15:00:00</TD>
+	<td>Tadas Nikonovas</TD>
+	<td><!--<a href="">-->strace for developers<!--</a>-->
+	  <div id="8f0e6a22d82ae9ebd46a80acab4ac7b3show" style="display:inline"><span class="scriptlink" onClick="abstract('8f0e6a22d82ae9ebd46a80acab4ac7b3');">Show abstract</span></div><div id="8f0e6a22d82ae9ebd46a80acab4ac7b3" style="display:none"><br />The talk will showcase a powerful but little known Linux utility,
+strace. The command belongs to a special group of tools which operate
+on other commands or executables. It reports system calls made and
+signals received by the application under scrutiny and is useful
+for debugging, trouble shooting, or analysing activity of a program
+without available source code. The presentation will focus on a
+particular use case for exploiting strace for tracing I/O activity.
+Basic usage examples of strace will be shown, demonstrating how to
+make sense of the output given by the command.
+
+	    <span class="scriptlink" onClick="abstract('8f0e6a22d82ae9ebd46a80acab4ac7b3');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-03-09<BR>15:00:00</TD>
+	<td>Colin Sauze</TD>
+	<td><a href="https://youtu.be/TG7GukjImTE">Continuous Integration with Jenkins</a>
+	  <div id="2201cd5e7bc6dc3416c56b8e88f2ba9cshow" style="display:inline"><span class="scriptlink" onClick="abstract('2201cd5e7bc6dc3416c56b8e88f2ba9c');">Show abstract</span></div><div id="2201cd5e7bc6dc3416c56b8e88f2ba9c" style="display:none"><br />I will be talking about Jenkins, a continuous integration
+system with a user friendly web interface. Jenkins automates compiling,
+testing and deploying software and can be a very useful tool for
+improving code quality and preventing bugs from reaching production
+systems. I will show how I used Jenkins to build and test a web portal
+for experiment management at the National Plant Phenomics Centre in
+Aberystwyth. I would also be asking the question of how appropriate
+continuous integration is in research software where developers often
+work alone and the number of users is small.
+
+	    <span class="scriptlink" onClick="abstract('2201cd5e7bc6dc3416c56b8e88f2ba9c');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-02-23<BR>15:00:00</TD>
+	<td>Jonas Glesaaen</TD>
+	<td><a href="https://youtu.be/YmLdZfTq0Q8">Introduction to template metaprogramming</a>
+	  <div id="2d9471bcb56c479f5627e98ad9838497show" style="display:inline"><span class="scriptlink" onClick="abstract('2d9471bcb56c479f5627e98ad9838497');">Show abstract</span></div><div id="2d9471bcb56c479f5627e98ad9838497" style="display:none"><br />In this talk I will give an introduction to template metaprogramming in C++,
+focusing on what it is good for and which kind of issues one normally would
+choose this particular tool from the C++ toolbox to solve. 
+<br /><br />
+We will go through the list of concepts and the terminology commonly in use
+when writing metaprograms, and the talk will feature plenty of example, some
+of which we will analyse in depth to understand what the compiler is doing.
+We will also look at libraries to facilitate working with TMP, more
+specifically using boost::mpl. Finally, if time permits we will have
+a look at how these ideas can be used to write what is known as "expression 
+templates", which is a variant of lazy evaluation at compile time.
+
+	    <span class="scriptlink" onClick="abstract('2d9471bcb56c479f5627e98ad9838497');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-02-16<BR>15:00:00</TD>
+	<td>Mark Dawson</TD>
+	<td><a href="https://youtu.be/AZS3yR_96kI">Meltdown in a nutshell</a>
+	  <div id="da317248da506ae38c424cb4a207b5afshow" style="display:inline"><span class="scriptlink" onClick="abstract('da317248da506ae38c424cb4a207b5af');">Show abstract</span></div><div id="da317248da506ae38c424cb4a207b5af" style="display:none"><br />The talk will introduce and motivate several design features of current chips and operating system features. 
+These include an accessible introduction to features of many modern processing units, such as: CPU caches, 
+pipelining, superscalarity, branch prediction and speculative execution. Only a very basic familiarity with 
+common programming concepts is assumed. The interplay between these chip design choices which resulted in the recent, 
+highly-publicised Meltdown vulnerability in almost all recent Intel chips will be explained at high level, without assuming 
+knowledge of any specific language.
+
+	    <span class="scriptlink" onClick="abstract('da317248da506ae38c424cb4a207b5af');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-02-09<BR>15:00:00</TD>
+	<td>Jonas Glesaaen</TD>
+	<td><!--<a href="">-->Introduction to C++ templates<!--</a>-->
+	  <div id="6f819101a84bd4358d1f7efb3a0ab0c9show" style="display:inline"><span class="scriptlink" onClick="abstract('6f819101a84bd4358d1f7efb3a0ab0c9');">Show abstract</span></div><div id="6f819101a84bd4358d1f7efb3a0ab0c9" style="display:none"><br />In this talk I will give a thorough introduction to templates in C++.
+This will include topics such as: what a template is; what kind of
+templates are there; what are the rules for template lookup; when are
+templates instantiated, and how can you affect this; what is a template
+specialisation, and what are the restrictions. If time permits we will
+also talk about the "recently" introduced concept of variadic templates
+and how these can be used to replace C's infamous varargs.
+<br /><br />
+The talk is intended to both introduce the rules of templates to the
+audience, push the "all errors at compile time"-mindset, as well as
+build a solid foundation on which we will base the next talk in the
+series, which is on template metaprogramming.
+
+	    <span class="scriptlink" onClick="abstract('6f819101a84bd4358d1f7efb3a0ab0c9');">Hide abstract</span></div></TD></TR>
+
+      <TR><td>2018-01-19<BR>15:00:00</TD>
+	<td>Jarno Rantaharju</TD>
+	<td><!--<a href="">-->Vectorisation for modern architectures with AVX512<!--</a>-->
+	  <!--<div id="8ee5e59ecd5d5ed63ef8e627576cc01eshow" style="display:inline"><span class="scriptlink" onClick="abstract('8ee5e59ecd5d5ed63ef8e627576cc01e');">Show abstract</span></div><div id="8ee5e59ecd5d5ed63ef8e627576cc01e" style="display:none"><br />
+	    <span class="scriptlink" onClick="abstract('8ee5e59ecd5d5ed63ef8e627576cc01e');">Hide abstract</span></div>--></TD></TR>
+
+      <TR><td>2018-01-12<BR>15:00:00</TD>
+	<td>Michele Mesiti</TD>
+	<td><!--<a href="">-->Using METAQ for task bundling<!--</a>-->
+	  <!--<div id="a74c38ac7318a280e2a83f6acbd3a82bshow" style="display:inline"><span class="scriptlink" onClick="abstract('a74c38ac7318a280e2a83f6acbd3a82b');">Show abstract</span></div><div id="a74c38ac7318a280e2a83f6acbd3a82b" style="display:none"><br />
+	    <span class="scriptlink" onClick="abstract('a74c38ac7318a280e2a83f6acbd3a82b');">Hide abstract</span></div>--></TD></TR>
+
+    </TABLE>
+  </div>
+
+  </div>
+
+  <!--footer-->
+  <div class="footer">
+    <ul class="footeritems">
+      <li class="footeritem"><a href="https://supercomputing.wales/"><img src="images/scw.svg" height="70px" /></a></li>
+      <li class="footeritem"><a href="https://www.swansea.ac.uk/"><img src="images/swansea.svg" height="70px" /></a></li>
+      <li class="footeritem"><img src="images/wefo.svg" height="60px" /></li>
+    </ul>
+  </div>
+  </BODY>
+</HTML>
