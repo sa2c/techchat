@@ -1,6 +1,7 @@
 # Seminar schedule generator
 
-```usage: generate.py [-h] [--outer_template OUTER_TEMPLATE]
+```
+usage: generate.py [-h] [--outer_template OUTER_TEMPLATE]
                    [--inner_template INNER_TEMPLATE]
                    [--annual_template ANNUAL_TEMPLATE]
                    folder output_file
@@ -16,7 +17,8 @@ optional arguments:
   -h, --help            show this help message and exit
   --outer_template OUTER_TEMPLATE
   --inner_template INNER_TEMPLATE
-  --annual_template ANNUAL_TEMPLATE```
+  --annual_template ANNUAL_TEMPLATE
+  ```
 
 ## Template syntax
 
