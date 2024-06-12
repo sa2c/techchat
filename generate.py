@@ -47,7 +47,7 @@ def get_details(files):
     nulldate = datetime.datetime(2018, 1, 1, 0, 0)
     
     for f in files:
-        detail = {**default, **yaml.load(get_file_contents(f))}
+        detail = {**default, **yaml.safe_load(get_file_contents(f))}
         if 'date' not in detail:
             print("{} is missing the essential 'date' parameter")
             continue
